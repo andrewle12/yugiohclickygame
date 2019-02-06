@@ -2,27 +2,27 @@ import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
+import yugioh from "./yugioh.json";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.yugioh to the yugioh json array
   state = {
-    friends
+    yugioh
   };
 
   removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+    // Filter this.state.yugioh for yugioh with an id not equal to the id being removed
+    const yugioh = this.state.yugioh.filter(friend => friend.id !== id);
+    // Set this.state.yugioh equal to the new yugioh array
+    this.setState({ yugioh });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.yugioh and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
         <Title>Clicky Game</Title>
-        {this.state.friends.map(friend => (
+        {this.state.yugioh.map(friend => (
           <FriendCard
             removeFriend={this.removeFriend}
             id={friend.id}
