@@ -3,11 +3,10 @@ import "./style.css";
 
 function Title(props) {
   return (
-    <h1 className="title">
-      <span className="clicky">Clicky Game</span>
-      <br />
+    <h3 className="title">
+      <span className="clicky">YuGiOh! Clicky Game</span>
       {}
-    </h1>
+    </h3>
   );
 }
 
