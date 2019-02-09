@@ -15,7 +15,7 @@ Be sure to run yarn or the package manager of your choice prior to running the a
 
 YuGiOh! Clicky Game is a React app where users try to click all 12 images without any repeats. The images will shuffle after every click and the user's current and high score will be displayed.
 
-![screenshot of app](./Capture.PNG)
+![screenshot of app](./public/Capture.PNG)
 
 ## Author
 
